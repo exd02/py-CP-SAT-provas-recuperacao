@@ -37,14 +37,15 @@ separadas por `|`; 0 = livre sem prova, 1 = ocupado por aula).
 ### `AlunosEmRecuperacao.json`
 ```json
 {
-  "Agropecuaria": { // alunos que pegaram recuperação em agropecuaria
-    "0": ["fisica","matematica","historia"], // o aluno pegou recuperação em fisica, matematica e historia
+  "Agropecuaria": { 
+    "0": ["fisica","matematica","historia"],
     "1": ["filosofia"], 
     "2": ["sociologia"]
   },
   "Informatica": { ... }
 }
 ```
+Contem a lista cursos, alunos e as disciplinas em que cada um pegou recuperação
 
 ---
 
