@@ -53,7 +53,7 @@ Contem a lista cursos, alunos e as disciplinas em que cada um pegou recuperaçã
 
 ```bash
 # 1. ambiente virtual
-python -m venv venv
+python -m venv .venv
 # Windows
 venv\Scripts\activate
 # Linux / macOS
