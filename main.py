@@ -39,16 +39,21 @@ for course, subj_set in subjects_by_course.items():
 daily_slot_ranges = [range(d * SLOTS_PER_DAY, (d + 1) * SLOTS_PER_DAY) for d in range(len(DAYS))]
 
 # ── modelo ──────────────────────────────────────────────
+
+# adicionar o dominio dos slots livres ao exam_slot (variavel de decisao)
 model, exam_slot = cp_model.CpModel(), {}
 for course in schedules:
     domain = cp_model.Domain.FromValues(sorted(free_slots[course]))
     for subj in subjects_by_course[course]:
         exam_slot[(course, subj)] = model.NewIntVarFromDomain(domain, f'{course}_{subj}')
 
+# nao permitir provas de um mesmo aluno no mesmo horario
 for (course, student), subj_set in subjects_by_student.items():
     for subj1, subj2 in combinations(subj_set, 2):
         model.Add(exam_slot[(course, subj1)] != exam_slot[(course, subj2)])
 
+# gerar tabela de de pares validos (equivalencia logica indicadora)
+# bool_var[(course, subj, day_idx)] = 1 se a prova cair no dia day_idx
 bool_var = {}
 for (course, subj), var in exam_slot.items():
     for day_idx, rng in enumerate(daily_slot_ranges):
@@ -59,10 +64,12 @@ for (course, subj), var in exam_slot.items():
         )
         bool_var[(course, subj, day_idx)] = b
 
+# aluno faz no max 3 provas/dia
 for (course, student), subj_set in subjects_by_student.items():
     for day_idx in range(len(DAYS)):
         model.Add(sum(bool_var[(course, subj, day_idx)] for subj in subj_set) <= 3)
 
+# sincronizar horarios de disciplinas entre cursos (se houver slot livre em comum)
 for subj, course_list in courses_by_subject.items():
     for course1, course2 in combinations(course_list, 2):
         if set(free_slots[course1]) & set(free_slots[course2]):
