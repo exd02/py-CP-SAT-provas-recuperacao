@@ -10,8 +10,9 @@ from ortools.sat.python import cp_model
 # ── entrada ──────────────────────────────────────────────
 schedules      = json.loads(Path("Horarios.json").read_text(encoding="utf-8"))
 recovery_raw   = json.loads(Path("AlunosEmRecuperacao.json").read_text(encoding="utf-8"))
+DAYS           = json.loads(Path("Dias.json").read_text(encoding="utf-8"))
 
-DAYS           = ["seg", "ter", "qua", "qui", "sex", "seg", "ter", "qua", "qui", "sex"]
+# DAYS           = ["seg", "ter", "qua", "qui", "sex", "seg", "ter", "qua", "qui", "sex"]
 SLOTS_PER_DAY  = len(next(iter(schedules.values()))["seg"])
 TOTAL_SLOTS    = len(DAYS) * SLOTS_PER_DAY
 
