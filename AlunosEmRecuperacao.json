@@ -707,5 +707,217 @@
       "historia",
       "artes"
     ]
+  },
+  "Zootecnia": {
+    "0": [
+        "cunic_apicultura"
+    ],
+    "1": [
+        "geografia",
+        "intro_zoo"
+    ],
+    "2": [
+        "geografia",
+        "ingles",
+        "lingua_portuguesa"
+    ],
+    "3": [
+        "geografia",
+        "educacao_fisica",
+        "intro_zoo",
+        "lingua_portuguesa"
+    ],
+    "4": [
+        "geografia"
+    ],
+    "5": [
+        "filosofia"
+    ],
+    "6": [
+        "intro_zoo",
+        "lingua_portuguesa"
+    ],
+    "7": [
+        "geografia",
+        "cunic_apicultura",
+        "fert_solo",
+        "intro_zoo",
+        "lingua_portuguesa"
+    ],
+    "8": [
+        "sociologia"
+    ],
+    "9": [
+        "artes",
+        "geografia",
+        "quimica",
+        "filosofia",
+        "educacao_fisica",
+        "historia",
+        "ingles",
+        "cunic_apicultura",
+        "matematica",
+        "fert_solo",
+        "biologia",
+        "intro_zoo",
+        "lingua_portuguesa"
+    ],
+    "10": [
+        "geografia",
+        "ingles",
+        "cunic_apicultura",
+        "intro_zoo"
+    ],
+    "11": [
+        "fert_solo",
+        "intro_zoo",
+        "sociologia"
+    ],
+    "12": [
+        "artes",
+        "geografia",
+        "intro_zoo"
+    ],
+    "13": [
+        "sociologia"
+    ],
+    "14": [
+        "artes",
+        "geografia",
+        "filosofia",
+        "equi_cap_oni",
+        "educacao_fisica",
+        "ingles",
+        "cunic_apicultura",
+        "fert_solo",
+        "intro_zoo",
+        "lingua_portuguesa"
+    ],
+    "15": [
+        "geografia",
+        "cunic_apicultura",
+        "intro_zoo",
+        "lingua_portuguesa"
+    ],
+    "16": [
+        "intro_zoo"
+    ],
+    "17": [
+        "geografia",
+        "filosofia",
+        "ingles",
+        "cunic_apicultura",
+        "fert_solo"
+    ],
+    "18": [
+        "ingles",
+        "cunic_apicultura"
+    ],
+    "19": [
+        "geografia",
+        "filosofia",
+        "educacao_fisica",
+        "ingles",
+        "cunic_apicultura",
+        "fert_solo",
+        "intro_zoo",
+        "fisica",
+        "lingua_portuguesa"
+    ],
+    "20": [
+        "ingles",
+        "intro_zoo",
+        "lingua_portuguesa"
+    ],
+    "21": [
+        "geografia",
+        "educacao_fisica",
+        "ingles",
+        "intro_zoo",
+        "lingua_portuguesa"
+    ],
+    "22": [
+        "cunic_apicultura",
+        "sociologia"
+    ],
+    "23": [
+        "artes",
+        "geografia",
+        "filosofia",
+        "equi_cap_oni",
+        "ingles",
+        "cunic_apicultura",
+        "matematica",
+        "fert_solo",
+        "intro_zoo",
+        "fisica",
+        "lingua_portuguesa"
+    ],
+    "24": [
+        "geografia",
+        "cunic_apicultura",
+        "intro_zoo",
+        "lingua_portuguesa",
+        "sociologia"
+    ],
+    "25": [
+        "artes",
+        "geografia",
+        "quimica",
+        "filosofia",
+        "equi_cap_oni",
+        "educacao_fisica",
+        "historia",
+        "laboratorio_de_ciencias_exatas",
+        "ingles",
+        "cunic_apicultura",
+        "matematica",
+        "fert_solo",
+        "biologia",
+        "intro_zoo",
+        "fisica",
+        "lingua_portuguesa"
+    ],
+    "26": [
+        "sociologia"
+    ],
+    "27": [
+        "artes",
+        "lingua_portuguesa",
+        "sociologia"
+    ],
+    "28": [
+        "artes",
+        "geografia",
+        "filosofia",
+        "equi_cap_oni",
+        "educacao_fisica",
+        "laboratorio_de_ciencias_exatas",
+        "ingles",
+        "cunic_apicultura",
+        "matematica",
+        "fert_solo",
+        "intro_zoo",
+        "fisica",
+        "lingua_portuguesa",
+        "sociologia"
+    ],
+    "29": [
+        "artes",
+        "geografia",
+        "filosofia",
+        "educacao_fisica",
+        "ingles",
+        "matematica",
+        "intro_zoo",
+        "lingua_portuguesa"
+    ],
+    "30": [
+        "ingles",
+        "lingua_portuguesa"
+    ],
+    "31": [
+        "sociologia"
+    ]
   }
 }
